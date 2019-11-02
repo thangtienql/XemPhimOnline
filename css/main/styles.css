@@ -1,8 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     background-color: #1a1a1a;
@@ -82,7 +83,7 @@ body{
     text-align: center;
     font-size: 18px;
     background: black;
-
+    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -98,6 +99,7 @@ body{
 }
 .swiper-slide img{
     width: 100%;
+    transition: transform 0.3s ease-in-out;
 }
 
 .label{
@@ -145,6 +147,9 @@ body{
     left: 0;
     right: 0;
     transform: translateY(-70%);
+}
+.swiper-slide:hover img{
+    transform: scale(1.2);
 }
 .text-swiper{
     position: absolute;
@@ -239,6 +244,11 @@ body{
     top: 0; 
     z-index: 500;
 }
+.item-phim:hover img{
+    -webkit-filter: grayscale(70%);
+    filter: grayscale(70%);
+    transition: 0.3s;
+}
 
 .caption{
     margin: 0 0 10px 0;
@@ -250,6 +260,103 @@ body{
     text-transform: uppercase;
 }
 
+
+/* phim-hoat-hinh */
+.phim-hoat-hinh .title-box{
+    margin-top: 15px;
+    font-size: 25px;
+    color: #ff9601;
+    font-weight: 500;
+    padding-left: 0;
+    border-bottom: 2px solid #ff6901;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 0;
+}
+.hoat-hinh{
+    margin-right: 15px;
+}
+.item-phim-hoathinh img{
+    width: 160px;
+    height: 227px;
+}
+.item-phim-hoathinh{
+    width: 160px;
+    height: 285px;
+    margin-top: 5px;
+    margin-left: 0;
+    overflow: hidden;
+}
+.item-phim-hoathinh .name{
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+    font-weight: normal;
+    height: 40px;
+    background: #101010;
+    padding: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.item-phim-hoathinh p i{
+    font-size: 30px;
+    color: #fff;
+    background: #ff9601;
+    width: 50px;
+    padding: 10px 12px;
+    border-radius: 50%;
+    transform: scale(1.5);
+    transition: all 0.3s ease-in-out;
+    margin: 0 auto;
+}
+.item-phim-hoathinh:hover p i{
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-70%);
+}
+.item-phim-hoathinh p{
+    display: block;
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    left: 15;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    width: 160px;
+}
+.item-phim-hoathinh:hover p{
+    opacity: 1;
+    top: 0; 
+    z-index: 500;
+}
+.item-phim-hoathinh:hover p i{
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-70%);
+}
+.item-phim-hoathinh:hover a{
+    text-decoration: none;
+}
+.item-phim-hoathinh:hover img{
+    -webkit-filter: grayscale(70%);
+    filter: grayscale(70%);
+    transition: 0.3s;
+}
+.item-phim-hoathinh .label{
+    left: 15px;
+}
+/* end-phim-hoat-hinh */
+
+
+/* phim-yeu-thich */
+
+/* end-phim-yeu-thich */
 
 .list-film-future .film-item-ver img.avatar {
     object-fit: cover;
