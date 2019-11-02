@@ -287,21 +287,23 @@ body{
     display: inline-block;
     padding: 12px 0;
 }
-
-
 /* end-phim-hoat-hinh */
+
+
+/* phim-yeu-thich */
 .phim-yeu-thich .title-box{
     margin-top: 15px;
     font-size: 25px;
     color: #ff9601;
     font-weight: 500;
-    padding-left: 1rem;
+    padding-left: 0;
+    border-bottom: 2px solid #ff6901;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 0;
 }
-
-/* phim-yeu-thich */
-
-
 /* end-phim-yeu-thich */
+
 
 .list-film-future .film-item-ver img.avatar {
     object-fit: cover;
@@ -405,6 +407,22 @@ body{
 .list-month li:nth-child(even) {
     background: rgba(20,20,20,0.5);
 }
+
+/* footer */
+.footer{
+    width: 100%;
+    background: #060606;
+    font-size: 15px;
+    color: #666666;
+}
+.footer .desc{
+    padding-top: 10px;
+}
+.footer .desc a{
+    color: #ccc;
+}
+
+/* end-footer */
 
 
 
