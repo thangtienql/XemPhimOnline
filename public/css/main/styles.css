@@ -20,6 +20,7 @@ body{
 }
 .box-user-menu a{
     color: #fff !important;
+    margin: 0 5px;
 }
 
 .nav-top .form-control{
@@ -56,6 +57,15 @@ body{
 }
 .multi-column-dropdown li a{
     color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    display: block;
+    text-decoration: none;
+}
+.multi-column-dropdown li a:hover{
+    color: #ff6901;
 }
 /* end-header */
 
@@ -184,6 +194,9 @@ body{
 .item-phim img{
     width: 160px;
     height: 227px;
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 .first-item{
     padding-left: 0;
@@ -210,7 +223,7 @@ body{
     text-overflow: ellipsis;
     overflow: hidden;
 }
-.item-phim a i{
+.item-phim p i{
     font-size: 30px;
     color: #fff;
     background: #ff9601;
@@ -221,14 +234,14 @@ body{
     transition: all 0.3s ease-in-out;
     margin: 0 auto;
 }
-.item-phim:hover a i{
+.item-phim:hover p i{
     top: 50%;
     position: absolute;
     left: 0;
     right: 0;
     transform: translateY(-70%);
 }
-.item-phim a{
+.item-phim p{
     display: block;
     position: absolute;
     top: 50%;
@@ -239,15 +252,16 @@ body{
     text-align: center;
     width: 160px;
 }
-.item-phim:hover a{
+.item-phim:hover p{
     opacity: 1;
     top: 0; 
     z-index: 500;
 }
 .item-phim:hover img{
-    -webkit-filter: grayscale(70%);
-    filter: grayscale(70%);
-    transition: 0.3s;
+    /* -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);
+    transition: 0.3s; */
+    opacity: .3;
 }
 
 .caption{
@@ -273,88 +287,19 @@ body{
     display: inline-block;
     padding: 12px 0;
 }
-.hoat-hinh{
-    margin-right: 15px;
-}
-.item-phim-hoathinh img{
-    width: 160px;
-    height: 227px;
-}
-.item-phim-hoathinh{
-    width: 160px;
-    height: 285px;
-    margin-top: 5px;
-    margin-left: 0;
-    overflow: hidden;
-}
-.item-phim-hoathinh .name{
-    text-align: center;
-    font-size: 12px;
-    margin: 0;
-    color: #fff;
-    font-weight: normal;
-    height: 40px;
-    background: #101010;
-    padding: 5px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-.item-phim-hoathinh p i{
-    font-size: 30px;
-    color: #fff;
-    background: #ff9601;
-    width: 50px;
-    padding: 10px 12px;
-    border-radius: 50%;
-    transform: scale(1.5);
-    transition: all 0.3s ease-in-out;
-    margin: 0 auto;
-}
-.item-phim-hoathinh:hover p i{
-    top: 50%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    transform: translateY(-70%);
-}
-.item-phim-hoathinh p{
-    display: block;
-    position: absolute;
-    top: 50%;
-    opacity: 0;
-    left: 15;
-    bottom: 0;
-    right: 0;
-    text-align: center;
-    width: 160px;
-}
-.item-phim-hoathinh:hover p{
-    opacity: 1;
-    top: 0; 
-    z-index: 500;
-}
-.item-phim-hoathinh:hover p i{
-    top: 50%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    transform: translateY(-70%);
-}
-.item-phim-hoathinh:hover a{
-    text-decoration: none;
-}
-.item-phim-hoathinh:hover img{
-    -webkit-filter: grayscale(70%);
-    filter: grayscale(70%);
-    transition: 0.3s;
-}
-.item-phim-hoathinh .label{
-    left: 15px;
-}
-/* end-phim-hoat-hinh */
 
+
+/* end-phim-hoat-hinh */
+.phim-yeu-thich .title-box{
+    margin-top: 15px;
+    font-size: 25px;
+    color: #ff9601;
+    font-weight: 500;
+    padding-left: 1rem;
+}
 
 /* phim-yeu-thich */
+
 
 /* end-phim-yeu-thich */
 
@@ -476,3 +421,5 @@ body{
 		overflow-x: hidden;
 	}
 }
+
+
