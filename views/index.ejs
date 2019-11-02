@@ -1,1007 +1,479 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('./page-base/top-base.ejs') %>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="css/icofont/icofont.min.css">
-  <link rel="stylesheet" href="css/swiper-css/swiper.min.css">
-  <link rel="stylesheet" href="css/main/styles.css">
-</head>
+<%- include('./view-base/header-view') %>
 
-<body>
-  <div class="wrapper">
+<div class="content">
+  <div class="main-content">
+    <div class="container">
+      <%- include('./containers/home/swiper-view.ejs') %>
 
-    <!-- Header -->
-    <header id="header">
-      <div class="container">
-        <div class="top">
-          <nav class="nav-top navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand brand-top" href="#">
-              <img src="images/motphim.png" alt="#">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <form class="form-inline my-2 my-lg-0 ml-5">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
-              <div class="box-user-menu ml-auto">
-                <a><i class="icofont-sign-in"></i>Đăng nhập</a>
-                <a><i class="icofont-people"></i>Đăng ký</a>
-                <a><i class="icofont-book-mark"></i>Bookmark</a>
+      <div class="row">
+        <div class="col-12 col-md-12 col-xl-8">
+          
+          <section class="tab-list-movie">
+            <%- include('./containers/home/list-movies-tab.ejs') %>
+          </section>
+
+          <div class="phim-hoat-hinh">
+            <h2 class="title-box">
+              <a>PHIM HOẠT HÌNH</a>
+            </h2>
+            <div class="list-phim-hoat-hinh">
+              <div class="row hoat-hinh">
+                <div class="col-6 col-sm-4 col-md-3 col-xl-3">
+                  <div class="item-phim-hoathinh">
+                    <span class="label">Tập 29 HD</span>
+                    <a title="Vua Đầu Bếp Soma (Phần 4) 2019" href="#">
+                      <img src="images/item-film/vua-dau-bep-soma-phan-4-7378.jpg">
+                      <p><i class="icofont-ui-play"></i></p>
+                      <div class="name">
+                        <span>Vua Đầu Bếp Soma (Phần 4) 2019</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-xl-3">
+                  <div class="item-phim-hoathinh">
+                    <span class="label">Tập 29 HD</span>
+                    <a title="Dr. Stone 2019" href="#">
+                      <img src="images/item-film/dr-stone-7072.jpg">
+                      <p><i class="icofont-ui-play"></i></p>
+                      <div class="name">
+                        <span>Dr. Stone 2019</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-xl-3">
+                  <div class="item-phim-hoathinh">
+                    <span class="label">Tập 29 HD</span>
+                    <a title="Cảnh Sát Bắt Ma 2019" href="#">
+                      <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
+                      <p><i class="icofont-ui-play"></i></p>
+                      <div class="name">
+                        <span>Cảnh Sát Bắt Ma 2019</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-xl-3">
+                  <div class="item-phim-hoathinh">
+                    <span class="label">Tập 29 HD</span>
+                    <a title="Cảnh Sát Bắt Ma 2019" href="#">
+                      <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
+                      <p><i class="icofont-ui-play"></i></p>
+                      <div class="name">
+                        <span>Cảnh Sát Bắt Ma 2019</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-xl-3">
+                  <div class="item-phim-hoathinh">
+                    <span class="label">Tập 29 HD</span>
+                    <a title="Cảnh Sát Bắt Ma 2019" href="#">
+                      <img src="images/item-film/tinh-dau-ngay-ngo-7394.jpg">
+                      <p><i class="icofont-ui-play"></i></p>
+                      <div class="name">
+                        <span>Tình Đầu Ngây Ngô 2019</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-xl-3">
+                  <div class="item-phim-hoathinh">
+                    <span class="label">Tập 29 HD</span>
+                    <a title="Cảnh Sát Bắt Ma 2019" href="#">
+                      <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
+                      <p><i class="icofont-ui-play"></i></p>
+                      <div class="name">
+                        <span>Cảnh Sát Bắt Ma 2019</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-xl-3">
+                  <div class="item-phim-hoathinh">
+                    <span class="label">Tập 29 HD</span>
+                    <a title="Cảnh Sát Bắt Ma 2019" href="#">
+                      <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
+                      <p><i class="icofont-ui-play"></i></p>
+                      <div class="name">
+                        <span>Cảnh Sát Bắt Ma 2019</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-xl-3">
+                  <div class="item-phim-hoathinh">
+                    <span class="label">Tập 29 HD</span>
+                    <a title="Cảnh Sát Bắt Ma 2019" href="#">
+                      <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
+                      <p><i class="icofont-ui-play"></i></p>
+                      <div class="name">
+                        <span>Cảnh Sát Bắt Ma 2019</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
               </div>
-            </div>
-          </nav>
-        </div>
-      </div>
-      <div class="main-menu">
-        <div class="container">
-          <nav class="nav-behind navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">TRANG CHỦ</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    THỂ LOẠI
-                  </a>
-                  <ul class="dropdown-menu multi-column columns-3">
-                    <div class="row">
-                      <!-- col-sm-4 -->
-                      <div class="col-12 col-md-12 col-lg-4">
-                        <ul class="multi-column-dropdown">
-                          <li><a href="#">Khoa Học - Viễn Tưởng</a></li>
-                          <li><a href="#">Võ thuật - Kiếm hiệp</a></li>
-                          <li><a href="#">Kinh dị - Ma</a></li>
-                          <li><a href="#">Phiêu lưu hành động</a></li>
-                        </ul>
-                      </div>
-
-                      <div class="col-12 col-md-12 col-lg-4">
-                        <ul class="multi-column-dropdown">
-                          <li><a href="#">Khoa Học - Viễn Tưởng</a></li>
-                          <li><a href="#">Võ thuật - Kiếm hiệp</a></li>
-                          <li><a href="#">Kinh dị - Ma</a></li>
-                          <li><a href="#">Phiêu lưu hành động</a></li>
-                        </ul>
-                      </div>
-
-                      <div class="col-12 col-md-12 col-lg-4">
-                        <ul class="multi-column-dropdown">
-                          <li><a href="#">Khoa Học - Viễn Tưởng</a></li>
-                          <li><a href="#">Võ thuật - Kiếm hiệp</a></li>
-                          <li><a href="#">Kinh dị - Ma</a></li>
-                          <li><a href="#">Phiêu lưu hành động</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </ul>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    QUỐC GIA
-                  </a>
-                  <ul class="dropdown-menu multi-column columns-3">
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <ul class="multi-column-dropdown">
-                          <li><a href="#">Việt Nam</a></li>
-                          <li><a href="#">Âu Mỹ</a></li>
-                          <li><a href="#">Trung Quốc</a></li>
-                          <li><a href="#">Đài Loan</a></li>
-                        </ul>
-                      </div>
-
-                      <div class="col-sm-4">
-                        <ul class="multi-column-dropdown">
-                          <li><a href="#">Hàn Quốc</a></li>
-                          <li><a href="#">Nhật Bản</a></li>
-                          <li><a href="#">Thái Lan</a></li>
-                          <li><a href="#">Ấn Độ</a></li>
-                        </ul>
-                      </div>
-
-                      <div class="col-sm-4">
-                        <ul class="multi-column-dropdown">
-                          <li><a href="#">Hồng Kông</a></li>
-                          <li><a href="#">Canada</a></li>
-                          <li><a href="#">Quốc Gia Khác</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </ul>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    PHIM MỚI
-                  </a>
-                  <ul class="dropdown-menu multi-column columns-1">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <ul class="multi-column-dropdown">
-                          <li><a href="#">2019</a></li>
-                          <li><a href="#">2018</a></li>
-                          <li><a href="#">2017</a></li>
-                          <li><a href="#">2016</a></li>
-                          <li><a href="#">2015</a></li>
-                          <li><a href="#">2014</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </ul>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#">PHIM BỘ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">PHIM THUYẾT MINH</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">PHIM CHIẾU RẠP</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">TV SHOW</a>
-                </li>
 
             </div>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <!-- End-Header -->
-
-    <div class="content">
-      <div class="main-content">
-        <div class="container">
-          <div class="list-films">
-            <h2 class="title-box">PHIM HOT</h2>
-            <!-- Swiper -->
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <span class="label">Tập 29 HD</span>
-                  <img src="images/img-swiper/nhung-nhan-vien-guong-mau-7107.jpg">
-                  <a><i class="icofont-ui-play"></i></a>
-                  <div class="text-swiper">
-                    <span>Những nhân viên gương mẫu</span>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <span class="label">Tập 29 HD</span>
-                  <img src="images/img-swiper/ban-chong-7025.jpg">
-                  <a><i class="icofont-ui-play"></i></a>
-                  <div class="text-swiper">
-                    <span>Bán Chồng</span>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <span class="label">Tập 29 HD</span>
-                  <img src="images/img-swiper/biet-doi-hoa-hoe-trung-tam-mai-moi-joseon-7182.jpg">
-                  <a><i class="icofont-ui-play"></i></a>
-                  <div class="text-swiper">
-                    <span>Biệt Đội Hoa Hòe: Trung Tâm Mai Mối Joseon</span>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <span class="label">Tập 29 HD</span>
-                  <img src="images/img-swiper/thuy-mac-nhan-sinh-7401.jpg">
-                  <a><i class="icofont-ui-play"></i></a>
-                  <div class="text-swiper">
-                    <span>Thủy Mặc Nhân Sinh</span>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <span class="label">Tập 29 HD</span>
-                  <img src="images/img-swiper/trang-sang-chieu-long-ta-7352.jpg">
-                  <a><i class="icofont-ui-play"></i></a>
-                  <div class="text-swiper">
-                    <span>Trăng Sáng Chiếu Lòng Ta</span>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <span class="label">Tập 29 HD</span>
-                  <img src="images/img-swiper/vi-sao-dua-anh-toi-ban-thai-7218.jpg">
-                  <a><i class="icofont-ui-play"></i></a>
-                  <div class="text-swiper">
-                    <span>Vì Sao Đưa Anh Tới (Bản Thái)</span>
-                  </div>
-                </div>
-              </div>
-              <!-- Add Pagination -->
-              <!-- Add Arrows -->
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-
-            <!-- Swiper JS -->
           </div>
 
-          <div class="row">
-            <div class="col-12 col-md-12 col-xl-8">
-              <div class="films-new">
-                <ul class="nav nav-tabs">
-                  <li class="nav-item tabs color">
-                    <a class="nav-link active" data-toggle="tab" href="#phimboupdate">PHIM BỘ MỚI
-                      CẬP
-                      NHẬT</a>
-                  </li>
-                  <li class="nav-item tabs color">
-                    <a class="nav-link" data-toggle="tab" href="#phimleupdate">PHIM LẺ MỚI CẬP
-                      NHẬT</a>
-                  </li>
-                  <li class="nav-item tabs color">
-                    <a class="nav-link" data-toggle="tab" href="#phimfinish">PHIM ĐÃ HOÀN THÀNH</a>
-                  </li>
-                </ul>
-              </div>
+          <div class="phim-yeu-thich">
 
-              <div class="tab-content">
-                <div id="phimboupdate" class="container tab-pane active">
-                  <div class="list-phim-bo">
-                    <div class="row">
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 first-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/tinh-dau-ngay-ngo-7394.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Tình Đầu Ngây Ngô 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 second-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 third-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 fourth-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 first-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/tinh-dau-ngay-ngo-7394.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Tình Đầu Ngây Ngô 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 second-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 third-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 fourth-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 first-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/tinh-dau-ngay-ngo-7394.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Tình Đầu Ngây Ngô 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 second-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 third-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 fourth-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          </div>
 
-                <div id="phimleupdate" class="container tab-pane fade">
-                  <div class="list-phim-le">
-                    <div class="row">
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 first-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/tinh-dau-ngay-ngo-7394.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Tình Đầu Ngây Ngô 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 second-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 third-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 fourth-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 first-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/tinh-dau-ngay-ngo-7394.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Tình Đầu Ngây Ngô 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 second-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 third-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 fourth-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 first-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/tinh-dau-ngay-ngo-7394.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Tình Đầu Ngây Ngô 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 second-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 third-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 fourth-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div id="phimfinish" class="container tab-pane fade">
-                  <div class="list-phim-finish">
-                    <div class="row">
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 first-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/tinh-dau-ngay-ngo-7394.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Tình Đầu Ngây Ngô 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 second-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 third-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 fourth-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 first-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/tinh-dau-ngay-ngo-7394.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Tình Đầu Ngây Ngô 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 second-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 third-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 fourth-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 first-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/tinh-dau-ngay-ngo-7394.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Tình Đầu Ngây Ngô 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 second-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 third-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-6 col-sm-4 col-md-3 col-xl-3 fourth-item">
-                        <div class="item-phim">
-                          <span class="label">Tập 29 HD</span>
-                          <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                          <a><i class="icofont-ui-play"></i></a>
-                          <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        </div>
+        <div class="col-12 col-md-12 col-xl-4">
+          <div class="trailer">
+            <div class="caption">
+              <h2>PHIM SẮP CHIẾU</h2>
             </div>
-            <div class="col-12 col-md-12 col-xl-4">
-              <div class="trailer">
-                <div class="caption">
-                  <h2>PHIM SẮP CHIẾU</h2>
-                </div>
-                <ul class="list-film-future">
-                  <li class="film-item-ver">
-                    <a title="Cô Gái Nhìn Thấy Mùi Hương" href="#">
-                      <img class="avatar" src="images/item-film/co-gai-nhin-thay-mui-huong-7419.jpg">
-                      <div class="name-film-future">
-                        <p class="real-name">Cô Gái Nhìn Thấy Mùi Hương</p>
-                        <p class="year-film">2019</p>
-                      </div>
-                    </a>
-                    <p class="star" data-rating="1" title="bad" style="width: 200px;">
-                      <img src="images/star/star-on.png" alt="1" title="bad">
-                      <img src="images/star/star-off.png" alt="2" title="bad">
-                      <img src="images/star/star-off.png" alt="3" title="bad">
-                      <img src="images/star/star-off.png" alt="4" title="bad">
-                      <img src="images/star/star-off.png" alt="5" title="bad">
-                    </p>
-                  </li>
-                  <li class="film-item-ver">
-                    <a title="Sinh Tử" href="#">
-                      <img class="avatar" src="images/item-film/sinh-tu-7409.jpg">
-                      <div class="name-film-future">
-                        <p class="real-name">Sinh Tử</p>
-                        <p class="year-film">2019</p>
-                      </div>
-                    </a>
-                    <p class="star" data-rating="1" title="bad" style="width: 200px;">
-                      <img src="images/star/star-on.png" alt="1" title="bad">
-                      <img src="images/star/star-off.png" alt="2" title="bad">
-                      <img src="images/star/star-off.png" alt="3" title="bad">
-                      <img src="images/star/star-off.png" alt="4" title="bad">
-                      <img src="images/star/star-off.png" alt="5" title="bad">
-                    </p>
-                  </li>
-                  <li class="film-item-ver">
-                    <a title="Ngọn Lửa Đố Kị" href="#">
-                      <img class="avatar" src="images/item-film/ngon-lua-do-ki-7264.jpg">
-                      <div class="name-film-future">
-                        <p class="real-name">Ngọn Lửa Đố Kị</p>
-                        <p class="year-film">2019</p>
-                      </div>
-                    </a>
-                    <p class="star" data-rating="1" title="bad" style="width: 200px;">
-                      <img src="images/star/star-on.png" alt="1" title="bad">
-                      <img src="images/star/star-off.png" alt="2" title="bad">
-                      <img src="images/star/star-off.png" alt="3" title="bad">
-                      <img src="images/star/star-off.png" alt="4" title="bad">
-                      <img src="images/star/star-off.png" alt="5" title="bad">
-                    </p>
-                  </li>
-                  <li class="film-item-ver">
-                    <a title="Ngọn Lửa Đố Kị" href="#">
-                      <img class="avatar" src="images/item-film/ngon-lua-do-ki-7264.jpg">
-                      <div class="name-film-future">
-                        <p class="real-name">Ngọn Lửa Đố Kị</p>
-                        <p class="year-film">2019</p>
-                      </div>
-                    </a>
-                    <p class="star" data-rating="1" title="bad" style="width: 200px;">
-                      <img src="images/star/star-on.png" alt="1" title="bad">
-                      <img src="images/star/star-off.png" alt="2" title="bad">
-                      <img src="images/star/star-off.png" alt="3" title="bad">
-                      <img src="images/star/star-off.png" alt="4" title="bad">
-                      <img src="images/star/star-off.png" alt="5" title="bad">
-                    </p>
-                  </li>
-                  <li class="film-item-ver">
-                    <a title="Ngọn Lửa Đố Kị" href="#">
-                      <img class="avatar" src="images/item-film/ngon-lua-do-ki-7264.jpg">
-                      <div class="name-film-future">
-                        <p class="real-name">Ngọn Lửa Đố Kị</p>
-                        <p class="year-film">2019</p>
-                      </div>
-                    </a>
-                    <p class="star" data-rating="1" title="bad" style="width: 200px;">
-                      <img src="images/star/star-on.png" alt="1" title="bad">
-                      <img src="images/star/star-off.png" alt="2" title="bad">
-                      <img src="images/star/star-off.png" alt="3" title="bad">
-                      <img src="images/star/star-off.png" alt="4" title="bad">
-                      <img src="images/star/star-off.png" alt="5" title="bad">
-                    </p>
-                  </li>
+            <ul class="list-film-future">
+              <li class="film-item-ver">
+                <a title="Cô Gái Nhìn Thấy Mùi Hương" href="#">
+                  <img class="avatar" src="images/item-film/co-gai-nhin-thay-mui-huong-7419.jpg">
+                  <div class="name-film-future">
+                    <p class="real-name">Cô Gái Nhìn Thấy Mùi Hương</p>
+                    <p class="year-film">2019</p>
+                  </div>
+                </a>
+                <p class="star" data-rating="1" title="bad" style="width: 200px;">
+                  <img src="images/star/star-on.png" alt="1" title="bad">
+                  <img src="images/star/star-off.png" alt="2" title="bad">
+                  <img src="images/star/star-off.png" alt="3" title="bad">
+                  <img src="images/star/star-off.png" alt="4" title="bad">
+                  <img src="images/star/star-off.png" alt="5" title="bad">
+                </p>
+              </li>
+              <li class="film-item-ver">
+                <a title="Sinh Tử" href="#">
+                  <img class="avatar" src="images/item-film/sinh-tu-7409.jpg">
+                  <div class="name-film-future">
+                    <p class="real-name">Sinh Tử</p>
+                    <p class="year-film">2019</p>
+                  </div>
+                </a>
+                <p class="star" data-rating="1" title="bad" style="width: 200px;">
+                  <img src="images/star/star-on.png" alt="1" title="bad">
+                  <img src="images/star/star-off.png" alt="2" title="bad">
+                  <img src="images/star/star-off.png" alt="3" title="bad">
+                  <img src="images/star/star-off.png" alt="4" title="bad">
+                  <img src="images/star/star-off.png" alt="5" title="bad">
+                </p>
+              </li>
+              <li class="film-item-ver">
+                <a title="Ngọn Lửa Đố Kị" href="#">
+                  <img class="avatar" src="images/item-film/ngon-lua-do-ki-7264.jpg">
+                  <div class="name-film-future">
+                    <p class="real-name">Ngọn Lửa Đố Kị</p>
+                    <p class="year-film">2019</p>
+                  </div>
+                </a>
+                <p class="star" data-rating="1" title="bad" style="width: 200px;">
+                  <img src="images/star/star-on.png" alt="1" title="bad">
+                  <img src="images/star/star-off.png" alt="2" title="bad">
+                  <img src="images/star/star-off.png" alt="3" title="bad">
+                  <img src="images/star/star-off.png" alt="4" title="bad">
+                  <img src="images/star/star-off.png" alt="5" title="bad">
+                </p>
+              </li>
+              <li class="film-item-ver">
+                <a title="Ngọn Lửa Đố Kị" href="#">
+                  <img class="avatar" src="images/item-film/ngon-lua-do-ki-7264.jpg">
+                  <div class="name-film-future">
+                    <p class="real-name">Ngọn Lửa Đố Kị</p>
+                    <p class="year-film">2019</p>
+                  </div>
+                </a>
+                <p class="star" data-rating="1" title="bad" style="width: 200px;">
+                  <img src="images/star/star-on.png" alt="1" title="bad">
+                  <img src="images/star/star-off.png" alt="2" title="bad">
+                  <img src="images/star/star-off.png" alt="3" title="bad">
+                  <img src="images/star/star-off.png" alt="4" title="bad">
+                  <img src="images/star/star-off.png" alt="5" title="bad">
+                </p>
+              </li>
+              <li class="film-item-ver">
+                <a title="Ngọn Lửa Đố Kị" href="#">
+                  <img class="avatar" src="images/item-film/ngon-lua-do-ki-7264.jpg">
+                  <div class="name-film-future">
+                    <p class="real-name">Ngọn Lửa Đố Kị</p>
+                    <p class="year-film">2019</p>
+                  </div>
+                </a>
+                <p class="star" data-rating="1" title="bad" style="width: 200px;">
+                  <img src="images/star/star-on.png" alt="1" title="bad">
+                  <img src="images/star/star-off.png" alt="2" title="bad">
+                  <img src="images/star/star-off.png" alt="3" title="bad">
+                  <img src="images/star/star-off.png" alt="4" title="bad">
+                  <img src="images/star/star-off.png" alt="5" title="bad">
+                </p>
+              </li>
 
-                </ul>
-              </div>
+            </ul>
+          </div>
 
-              <div class="most-view mt-5">
-                <div class="caption">
-                  <h2>HOT TRENDS</h2>
-                </div>
-                <div class="tabs-trend">
-                  <ul class="nav nav-tabs list-trend">
-                    <li class="nav-item tabs trend">
-                      <a class="nav-link active" data-toggle="tab" href="#day">Ngày</a>
+          <div class="most-view mt-5">
+            <div class="caption">
+              <h2>HOT TRENDS</h2>
+            </div>
+            <div class="tabs-trend">
+              <ul class="nav nav-tabs list-trend">
+                <li class="nav-item tabs trend">
+                  <a class="nav-link active" data-toggle="tab" href="#day">Ngày</a>
+                </li>
+                <li class="nav-item tabs trend">
+                  <a class="nav-link" data-toggle="tab" href="#week">Tuần</a>
+                </li>
+                <li class="nav-item tabs trend">
+                  <a class="nav-link" data-toggle="tab" href="#month">Tháng</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content">
+              <div id="day" class="container tab-pane active">
+                <div class="list-trend-day">
+                  <ul class="list-day">
+                    <li class="item-trend">
+                      <span class="number-rank">1</span>
+                      <a href="#">
+                        <span>Trăng Sáng Chiếu Lòng Ta</span>
+                      </a>
+                      <div class="count-view">745 lượt quan tâm</div>
                     </li>
-                    <li class="nav-item tabs trend">
-                      <a class="nav-link" data-toggle="tab" href="#week">Tuần</a>
+                    <li class="item-trend">
+                      <span class="number-rank">2</span>
+                      <a href="#">
+                        <span>Hoa Hồng Trên Ngực Trái</span>
+                      </a>
+                      <div class="count-view">340 lượt quan tâm</div>
                     </li>
-                    <li class="nav-item tabs trend">
-                      <a class="nav-link" data-toggle="tab" href="#month">Tháng</a>
+                    <li class="item-trend">
+                      <span class="number-rank">3</span>
+                      <a href="#">
+                        <span>Tiểu Sử Chàng Nokdu</span>
+                      </a>
+                      <div class="count-view">270 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">4</span>
+                      <a href="#">
+                        <span>Vô Cùng Thích Anh</span>
+                      </a>
+                      <div class="count-view">260 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">5</span>
+                      <a href="#">
+                        <span>Tiếng Sét Trong Mưa</span>
+                      </a>
+                      <div class="count-view">244 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">6</span>
+                      <a href="#">
+                        <span>Tình Cờ Va Phải Ha Roo</span>
+                      </a>
+                      <div class="count-view">194 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">7</span>
+                      <a href="#">
+                        <span>Quyến Luyến Giang Hồ</span>
+                      </a>
+                      <div class="count-view">176 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">8</span>
+                      <a href="#">
+                        <span>Người Bạn Gái Tôi Không Thể Yêu</span>
+                      </a>
+                      <div class="count-view">141 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">9</span>
+                      <a href="#">
+                        <span>Tình Đầu Ngây Ngô</span>
+                      </a>
+                      <div class="count-view">138 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">10</span>
+                      <a href="#">
+                        <span>Yêu Em Là Sự Sắp Đặt Tuyệt Vời Nhất</span>
+                      </a>
+                      <div class="count-view">104 lượt quan tâm</div>
                     </li>
                   </ul>
                 </div>
+              </div>
 
-                <div class="tab-content">
-                  <div id="day" class="container tab-pane active">
-                    <div class="list-trend-day">
-                      <ul class="list-day">
-                        <li class="item-trend">
-                          <span class="number-rank">1</span>
-                          <a href="#">
-                            <span>Trăng Sáng Chiếu Lòng Ta</span>
-                          </a>
-                          <div class="count-view">745 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">2</span>
-                          <a href="#">
-                            <span>Hoa Hồng Trên Ngực Trái</span>
-                          </a>
-                          <div class="count-view">340 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">3</span>
-                          <a href="#">
-                            <span>Tiểu Sử Chàng Nokdu</span>
-                          </a>
-                          <div class="count-view">270 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">4</span>
-                          <a href="#">
-                            <span>Vô Cùng Thích Anh</span>
-                          </a>
-                          <div class="count-view">260 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">5</span>
-                          <a href="#">
-                            <span>Tiếng Sét Trong Mưa</span>
-                          </a>
-                          <div class="count-view">244 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">6</span>
-                          <a href="#">
-                            <span>Tình Cờ Va Phải Ha Roo</span>
-                          </a>
-                          <div class="count-view">194 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">7</span>
-                          <a href="#">
-                            <span>Quyến Luyến Giang Hồ</span>
-                          </a>
-                          <div class="count-view">176 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">8</span>
-                          <a href="#">
-                            <span>Người Bạn Gái Tôi Không Thể Yêu</span>
-                          </a>
-                          <div class="count-view">141 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">9</span>
-                          <a href="#">
-                            <span>Tình Đầu Ngây Ngô</span>
-                          </a>
-                          <div class="count-view">138 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">10</span>
-                          <a href="#">
-                            <span>Yêu Em Là Sự Sắp Đặt Tuyệt Vời Nhất</span>
-                          </a>
-                          <div class="count-view">104 lượt quan tâm</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div id="week" class="container tab-pane fade">
-                    <div class="list-trend-week">
-                      <ul class="list-week">
-                        <li class="item-trend">
-                          <span class="number-rank">1</span>
-                          <a href="#">
-                            <span>Trăng Sáng Chiếu Lòng Ta</span>
-                          </a>
-                          <div class="count-view">745 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">2</span>
-                          <a href="#">
-                            <span>Hoa Hồng Trên Ngực Trái</span>
-                          </a>
-                          <div class="count-view">340 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">3</span>
-                          <a href="#">
-                            <span>Tiểu Sử Chàng Nokdu</span>
-                          </a>
-                          <div class="count-view">270 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">4</span>
-                          <a href="#">
-                            <span>Vô Cùng Thích Anh</span>
-                          </a>
-                          <div class="count-view">260 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">5</span>
-                          <a href="#">
-                            <span>Tiếng Sét Trong Mưa</span>
-                          </a>
-                          <div class="count-view">244 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">6</span>
-                          <a href="#">
-                            <span>Tình Cờ Va Phải Ha Roo</span>
-                          </a>
-                          <div class="count-view">194 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">7</span>
-                          <a href="#">
-                            <span>Quyến Luyến Giang Hồ</span>
-                          </a>
-                          <div class="count-view">176 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">8</span>
-                          <a href="#">
-                            <span>Người Bạn Gái Tôi Không Thể Yêu</span>
-                          </a>
-                          <div class="count-view">141 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">9</span>
-                          <a href="#">
-                            <span>Tình Đầu Ngây Ngô</span>
-                          </a>
-                          <div class="count-view">138 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">10</span>
-                          <a href="#">
-                            <span>Yêu Em Là Sự Sắp Đặt Tuyệt Vời Nhất</span>
-                          </a>
-                          <div class="count-view">104 lượt quan tâm</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div id="month" class="container tab-pane fade">
-                    <div class="list-trend-month">
-                      <ul class="list-month">
-                        <li class="item-trend">
-                          <span class="number-rank">1</span>
-                          <a href="#">
-                            <span>Trăng Sáng Chiếu Lòng Ta</span>
-                          </a>
-                          <div class="count-view">745 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">2</span>
-                          <a href="#">
-                            <span>Hoa Hồng Trên Ngực Trái</span>
-                          </a>
-                          <div class="count-view">340 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">3</span>
-                          <a href="#">
-                            <span>Tiểu Sử Chàng Nokdu</span>
-                          </a>
-                          <div class="count-view">270 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">4</span>
-                          <a href="#">
-                            <span>Vô Cùng Thích Anh</span>
-                          </a>
-                          <div class="count-view">260 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">5</span>
-                          <a href="#">
-                            <span>Tiếng Sét Trong Mưa</span>
-                          </a>
-                          <div class="count-view">244 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">6</span>
-                          <a href="#">
-                            <span>Tình Cờ Va Phải Ha Roo</span>
-                          </a>
-                          <div class="count-view">194 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">7</span>
-                          <a href="#">
-                            <span>Quyến Luyến Giang Hồ</span>
-                          </a>
-                          <div class="count-view">176 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">8</span>
-                          <a href="#">
-                            <span>Người Bạn Gái Tôi Không Thể Yêu</span>
-                          </a>
-                          <div class="count-view">141 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">9</span>
-                          <a href="#">
-                            <span>Tình Đầu Ngây Ngô</span>
-                          </a>
-                          <div class="count-view">138 lượt quan tâm</div>
-                        </li>
-                        <li class="item-trend">
-                          <span class="number-rank">10</span>
-                          <a href="#">
-                            <span>Yêu Em Là Sự Sắp Đặt Tuyệt Vời Nhất</span>
-                          </a>
-                          <div class="count-view">104 lượt quan tâm</div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+              <div id="week" class="container tab-pane fade">
+                <div class="list-trend-week">
+                  <ul class="list-week">
+                    <li class="item-trend">
+                      <span class="number-rank">1</span>
+                      <a href="#">
+                        <span>Trăng Sáng Chiếu Lòng Ta</span>
+                      </a>
+                      <div class="count-view">745 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">2</span>
+                      <a href="#">
+                        <span>Hoa Hồng Trên Ngực Trái</span>
+                      </a>
+                      <div class="count-view">340 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">3</span>
+                      <a href="#">
+                        <span>Tiểu Sử Chàng Nokdu</span>
+                      </a>
+                      <div class="count-view">270 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">4</span>
+                      <a href="#">
+                        <span>Vô Cùng Thích Anh</span>
+                      </a>
+                      <div class="count-view">260 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">5</span>
+                      <a href="#">
+                        <span>Tiếng Sét Trong Mưa</span>
+                      </a>
+                      <div class="count-view">244 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">6</span>
+                      <a href="#">
+                        <span>Tình Cờ Va Phải Ha Roo</span>
+                      </a>
+                      <div class="count-view">194 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">7</span>
+                      <a href="#">
+                        <span>Quyến Luyến Giang Hồ</span>
+                      </a>
+                      <div class="count-view">176 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">8</span>
+                      <a href="#">
+                        <span>Người Bạn Gái Tôi Không Thể Yêu</span>
+                      </a>
+                      <div class="count-view">141 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">9</span>
+                      <a href="#">
+                        <span>Tình Đầu Ngây Ngô</span>
+                      </a>
+                      <div class="count-view">138 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">10</span>
+                      <a href="#">
+                        <span>Yêu Em Là Sự Sắp Đặt Tuyệt Vời Nhất</span>
+                      </a>
+                      <div class="count-view">104 lượt quan tâm</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="month" class="container tab-pane fade">
+                <div class="list-trend-month">
+                  <ul class="list-month">
+                    <li class="item-trend">
+                      <span class="number-rank">1</span>
+                      <a href="#">
+                        <span>Trăng Sáng Chiếu Lòng Ta</span>
+                      </a>
+                      <div class="count-view">745 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">2</span>
+                      <a href="#">
+                        <span>Hoa Hồng Trên Ngực Trái</span>
+                      </a>
+                      <div class="count-view">340 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">3</span>
+                      <a href="#">
+                        <span>Tiểu Sử Chàng Nokdu</span>
+                      </a>
+                      <div class="count-view">270 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">4</span>
+                      <a href="#">
+                        <span>Vô Cùng Thích Anh</span>
+                      </a>
+                      <div class="count-view">260 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">5</span>
+                      <a href="#">
+                        <span>Tiếng Sét Trong Mưa</span>
+                      </a>
+                      <div class="count-view">244 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">6</span>
+                      <a href="#">
+                        <span>Tình Cờ Va Phải Ha Roo</span>
+                      </a>
+                      <div class="count-view">194 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">7</span>
+                      <a href="#">
+                        <span>Quyến Luyến Giang Hồ</span>
+                      </a>
+                      <div class="count-view">176 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">8</span>
+                      <a href="#">
+                        <span>Người Bạn Gái Tôi Không Thể Yêu</span>
+                      </a>
+                      <div class="count-view">141 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">9</span>
+                      <a href="#">
+                        <span>Tình Đầu Ngây Ngô</span>
+                      </a>
+                      <div class="count-view">138 lượt quan tâm</div>
+                    </li>
+                    <li class="item-trend">
+                      <span class="number-rank">10</span>
+                      <a href="#">
+                        <span>Yêu Em Là Sự Sắp Đặt Tuyệt Vời Nhất</span>
+                      </a>
+                      <div class="count-view">104 lượt quan tâm</div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-
-
-
         </div>
       </div>
+
+
+
     </div>
-
-    
   </div>
+</div>
 
-  <script src="js/bootstrap/jquery-3.3.1.slim.min.js"></script>
-  <script src="js/bootstrap/popper.min.js"></script>
-  <script src="js/bootstrap/bootstrap.min.js"></script>
-  <script src="js/swpier-js/swiper.min.js"></script>
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 5,
-      spaceBetween: 10,
-      slidesPerGroup: 1,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
-</body>
-
-</html>
+<%- include('./page-base/bottom-base.ejs') %>
