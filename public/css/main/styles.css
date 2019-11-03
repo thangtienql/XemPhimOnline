@@ -325,6 +325,7 @@ body{
 }
 .film-item-ver{
     margin-bottom: 10px;
+    list-style: none;
 }
 .star{
     margin: 0;
@@ -424,6 +425,226 @@ body{
 
 /* end-footer */
 
+/* Item-Movie */
+.breadcrumbs{
+    margin: 10px 0 10px 0;
+    overflow: hidden;
+    padding: 5px 10px;
+    list-style: none;
+    background-color: #111;
+    border-radius: 3px;
+}
+.breadcrumbs li{
+    list-style: none;
+}
+.breadcrumbs a {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    float: left;
+    color: #fff !important;
+    font-size: 12px;
+    line-height: 36px;
+    padding: 0 10px 0 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+.breadcrumbs a::after{
+    content: "/";
+}
+
+/* page-movie */
+.poster{
+    margin: 0 10px 10px 0;
+    position: relative;
+}
+.poster img{
+    width: 100%;
+}
+.poster .two-button li{
+    display: inline-block;
+}
+
+.two-button{
+    position: absolute;
+    bottom: -15px;
+    text-align: center;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    padding: 10px 0px;
+    list-style: none;
+}
+.two-button .btn-see{
+    font-size: 16px;
+    color: #ffffff;
+    padding: 8px 10px;
+    margin: 0 5px;
+    border-radius: 0;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+.two-button .btn-danger{
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+.content-info-film .title{
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px 0 0 0;
+    margin: 0 0 5px 0;
+    font-family: Tahoma;
+    line-height: 1.6em;
+    text-transform: uppercase;
+    color: #ff9601;
+    display: block;
+}
+.content-info-film .rea-name{
+    font-size: 12px;
+    color: #999;
+    display: block;
+}
+
+.wrapper-scrollpy {
+    display: flex;
+    height: 48vh;
+
+}
+.slimScrollBar {
+    width: 100%;
+    overflow-y: scroll;
+    padding: 10px;
+    background: #222;
+    color: #bbb;
+    font-size: 12px;
+    line-height: 26px;
+}
+.slimScrollBar .col dt{
+    float: left;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.content {
+    overflow-y: scroll;
+    padding: 10px;
+  }
+  
+.slimScrollBar::-webkit-scrollbar {
+    width: 10px;
+    background-color: black;
+}
+
+.btn-social{
+    clear: both;
+    margin: 8px 0 0 0;
+    float: left;
+    width: 100%;
+    padding: 5px 8px;
+    color: #bbb;
+    background: #222;
+}
+.fb-like{
+    float: left;
+    margin: 10px 10px 0 0;
+    overflow: hidden;
+    max-width: 135px;
+    height: 25px;
+}
+.fb-save {
+    float: left;
+    margin: 10px 10px 0 0;
+    overflow: hidden;
+    max-width: 135px;
+    height: 25px;
+}
+.box-rating {
+    float: left;
+    width: 360px;
+    line-height: 14px;
+    font-size: 13px;
+    margin: 0 10px 0 0;
+}  
+
+#star{
+    cursor: pointer;
+    width: 200px;
+    display: inline-block;
+    float: left;
+} 
+.div_average{
+    float: left;
+    line-height: 16px;
+    margin: 0 5px;
+    font-size: 14px;
+}
+.detail{
+    margin: 30px 0 0 0;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #828282;
+}
+.detail .tabs-content{
+    background: #282828;
+    padding: 10px;
+}
+.detail .tabs-content h3{
+    margin: 0px 0 8px 0;  
+      font-size: 14px!important;
+    display: inline-block;
+    font-weight: 700;
+    color: #ccc;
+    text-transform: uppercase;
+}
+.tabs-content .tab{
+    text-align: justify;
+}
+.detail .tags{
+    margin: 10px 0;
+    overflow: hidden;
+}
+.detail .tags li{
+    float: left;
+    margin: 3px;
+    list-style: none;
+    color: #fff;
+    padding: 2px 5px;
+}
+.tag-item h2{
+    margin: 0;
+    padding: 5px;
+    background: #3D4045;
+    line-height: 13px;
+    font-size: 12px;
+    color: #fafafa;
+}
+.tags a{
+    font-size: 12px;
+    color: #fafafa;
+}
+.detail .keywords h4{
+    color: #5f5f5f;
+    display: inline-block;
+    font-size: 11px;
+    margin: 0 5px 0 0;
+}
+.film-note {
+    margin: 10px 0 0 0;
+    border: 1px solid #ff9601;
+    background: #000;
+    padding: 10px;
+}
+.film-note .hidden {
+    display: none!important;
+    visibility: hidden!important;
+}
+#comment-tab{
+    margin-top: 20px;
+}
+#comment-tab #tabs-facebook{
+    background: #ffffff;
+}
+.fb-comments{
+    max-width: 100%;
+}
 
 
 
