@@ -49,6 +49,7 @@ body{
 .navbar-light .navbar-nav .nav-link:hover {
     color: #ff9601;
 }
+
 .navbar-light .navbar-brand {
     color:#fff;
 }
@@ -110,6 +111,10 @@ body{
 .swiper-slide img{
     width: 100%;
     transition: transform 0.3s ease-in-out;
+}
+
+.swiper-slide .label{
+    top: 0px !important;
 }
 
 .label{
@@ -354,8 +359,8 @@ body{
 }
 .nav-tabs .nav-link.active {
     color: #fff;
-    background-color: #5d5d5d;
-    border-color: #5d5d5d;
+    background-color: #ff9601;
+    border-color: #ff9601;
 }
 .list-day , .list-week , .list-month{
     list-style: none;
@@ -445,12 +450,12 @@ body{
     color: #fff !important;
     font-size: 12px;
     line-height: 36px;
-    padding: 0 10px 0 10px;
+    padding: 0 3px 0 5px;
     position: relative;
     text-transform: uppercase;
 }
 .breadcrumbs a::after{
-    content: "/";
+    content: " /";
 }
 
 /* page-movie */
@@ -517,6 +522,14 @@ body{
     color: #bbb;
     font-size: 12px;
     line-height: 26px;
+}
+.slimScrollBar::-webkit-scrollbar{
+    background: #222 !important;
+}
+.slimScrollBar::-webkit-scrollbar-thumb{
+    background: rgb(0, 0, 0) !important;
+    height: 20px !important;
+    border-radius: 7px !important;
 }
 .slimScrollBar .col dt{
     float: left;
@@ -696,6 +709,10 @@ body{
 ul.server-backup li:nth-child(2n+1) {
     background-color: #131313;
 }
+ul.server-backup li:nth-child(2n) {
+    background-color: #555;
+}
+
 ul.server-backup li {
     float: left;
     width: 100%;
