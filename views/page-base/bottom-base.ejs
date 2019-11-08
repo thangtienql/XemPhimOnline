@@ -7,11 +7,11 @@
 <script src="js/swpier-js/swiper.min.js"></script>
 <script>
   var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 5,
+    slidesPerView: 1,
     spaceBetween: 10,
-    slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
+
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -20,8 +20,27 @@
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+      478: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 10,
+      },
+    }
   });
 </script>
+
 </body>
 
 </html>
