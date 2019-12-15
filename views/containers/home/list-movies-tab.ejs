@@ -1,3 +1,27 @@
+   <% 
+    try {
+        // var {data:listMoviesNew=[]}=dataNewMovies;
+        //  dataMoviesTab:{
+        //        dataMovieHot: dataMovieHot,
+        //        dataSeriesMovie: dataSeriesMovie,
+        //        latestRetailMovies: latestRetailMovies
+        //    }
+        var {
+               dataNewMovies: {
+                   data:listNewMovies
+               },
+               dataSeriesMovie:{
+                   data:listSerieMoives
+               },
+               latestRetailMovies:{
+                   data:listRetaMovies
+               }
+        }=dataMoviesTab;
+    } catch(e){
+
+    }
+
+%>
 <div class="films-new">
     <ul class="nav nav-tabs">
         <li class="nav-item tabs color">
@@ -18,380 +42,32 @@
     <div id="phimboupdate" class="container tab-pane active">
         <div class="list-phim-bo">
             <div class="row">
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 first-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/tinh-dau-ngay-ngo-7394.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Tình Đầu Ngây Ngô 2019</span>
+                    <% listNewMovies.forEach(function(item) { %>
+                       <div class="col-6 col-sm-4 col-md-3 col-xl-3">
+                          <div class="item-phim">
+                             <span class="label">Tập 29 HD</span>
+                             <a title="<%= item.post_title %>" href="#">
+                                <img src="<%= item.img %>">
+                                <p><i class="icofont-ui-play"></i></p>
+                                <div class="name">
+                                <span><%= item.post_title %></span>
+                            </div>
+                            </a>
+                          </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 second-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 third-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 fourth-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 first-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/tinh-dau-ngay-ngo-7394.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Tình Đầu Ngây Ngô 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 second-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 third-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 fourth-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 first-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/tinh-dau-ngay-ngo-7394.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Tình Đầu Ngây Ngô 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 second-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 third-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 fourth-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
+                    <% })%>
             </div>
         </div>
     </div>
 
     <div id="phimleupdate" class="container tab-pane fade">
         <div class="list-phim-le">
-            <div class="row">
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 first-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/tinh-dau-ngay-ngo-7394.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Tình Đầu Ngây Ngô 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 second-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 third-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 fourth-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 first-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/tinh-dau-ngay-ngo-7394.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Tình Đầu Ngây Ngô 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 second-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 third-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 fourth-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 first-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/tinh-dau-ngay-ngo-7394.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Tình Đầu Ngây Ngô 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 second-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 third-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 fourth-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
     <div id="phimfinish" class="container tab-pane fade">
         <div class="list-phim-finish">
-            <div class="row">
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 first-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/tinh-dau-ngay-ngo-7394.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Tình Đầu Ngây Ngô 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 second-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 third-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 fourth-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 first-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/tinh-dau-ngay-ngo-7394.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Tình Đầu Ngây Ngô 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 second-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 third-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 fourth-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 first-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/tinh-dau-ngay-ngo-7394.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Tình Đầu Ngây Ngô 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 second-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 third-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-4 col-md-3 col-xl-3 fourth-item">
-                    <div class="item-phim">
-                        <span class="label">Tập 29 HD</span>
-                        <img src="images/item-film/canh-sat-bat-ma-7386.jpg">
-                        <p><i class="icofont-ui-play"></i></p>
-                        <div class="name">
-                            <span>Cảnh Sát Bắt Ma 2019</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+     
         </div>
     </div>
 </div>

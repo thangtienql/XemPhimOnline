@@ -133,7 +133,7 @@ body{
     font-weight: normal;
     border-radius: 0 5px 5px 0;
 }
-.swiper-slide a{
+.swiper-slide a a{
     display: block;
     position: absolute;
     top: 50%;
@@ -297,6 +297,9 @@ body{
 }
 /* end-phim-hoat-hinh */
 
+.list-phim div{
+    padding:0
+}
 
 /* phim-yeu-thich */
 .phim-yeu-thich .title-box{

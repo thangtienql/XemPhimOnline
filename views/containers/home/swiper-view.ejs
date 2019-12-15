@@ -1,56 +1,27 @@
+<% 
+    try {
+        var {data:listMovies=[]}=dataMovieHot;
+    } catch(e){
+
+    }
+%>
 <div class="list-films">
-<h2 class="title-box">PHIM HOT</h2>
+<h2 class="title-box"><%= dataMovieHot.movies_title %></h2>
 <!-- Swiper -->
 <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <span class="label">Tập 29 HD</span>
-            <img src="images/img-swiper/nhung-nhan-vien-guong-mau-7107.jpg">
-            <a><i class="icofont-ui-play"></i></a>
-            <div class="text-swiper">
-                <span>Những nhân viên gương mẫu</span>
+        <% listMovies.forEach(function(item) { %>
+          <div class="swiper-slide"> 
+            <a href="#" class="">
+                <span class="label">Tập 29 HD</span>
+                   <img src="<%= item.img %>">
+                    <div> <i class="icofont-ui-play"></i></div>
+                <div class="text-swiper">
+                    <span><%= item.post_title %></span>
+                </div>
+           </a>
             </div>
-        </div>
-        <div class="swiper-slide">
-            <span class="label">Tập 29 HD</span>
-            <img src="images/img-swiper/ban-chong-7025.jpg">
-            <a><i class="icofont-ui-play"></i></a>
-            <div class="text-swiper">
-                <span>Bán Chồng</span>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <span class="label">Tập 29 HD</span>
-            <img src="images/img-swiper/biet-doi-hoa-hoe-trung-tam-mai-moi-joseon-7182.jpg">
-            <a><i class="icofont-ui-play"></i></a>
-            <div class="text-swiper">
-                <span>Biệt Đội Hoa Hòe: Trung Tâm Mai Mối Joseon</span>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <span class="label">Tập 29 HD</span>
-            <img src="images/img-swiper/thuy-mac-nhan-sinh-7401.jpg">
-            <a><i class="icofont-ui-play"></i></a>
-            <div class="text-swiper">
-                <span>Thủy Mặc Nhân Sinh</span>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <span class="label">Tập 29 HD</span>
-            <img src="images/img-swiper/trang-sang-chieu-long-ta-7352.jpg">
-            <a><i class="icofont-ui-play"></i></a>
-            <div class="text-swiper">
-                <span>Trăng Sáng Chiếu Lòng Ta</span>
-            </div>
-        </div>
-        <div class="swiper-slide">
-            <span class="label">Tập 29 HD</span>
-            <img src="images/img-swiper/vi-sao-dua-anh-toi-ban-thai-7218.jpg">
-            <a><i class="icofont-ui-play"></i></a>
-            <div class="text-swiper">
-                <span>Vì Sao Đưa Anh Tới (Bản Thái)</span>
-            </div>
-        </div>
+        <% }); %>
     </div>
     <!-- Add Pagination -->
     <!-- Add Arrows -->
