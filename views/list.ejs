@@ -3,25 +3,36 @@
 <div class="content">
     <div class="main-content">
         <div class="container">
-             <div class="col-12 col-md-12 col-xl-8">
-          <div class="list-phim">
-                <div class="row">
+            <div class="col-12 col-md-12 col-xl-8">
+                <div class="list-phim">
+                    <div class="row">
                         <% listMovies.forEach(function(item) { %>
-                                <div class="col-6 col-sm-4 col-md-3 col-xl-3">
-                                    <div class="item-phim">
-                                        <span class="label">Tập 29 HD</span>
-                                        <a title="<%= item.post_title %>" href="#">
-                                            <img src="<%= item.img %>">
-                                            <p><i class="icofont-ui-play"></i></p>
-                                            <div class="name">
-                                            <span><%= item.post_title %></span>
-                                        </div>
-                                        </a>
+                        <div class="col-6 col-sm-4 col-md-3 col-xl-3">
+                            <div class="item-phim">
+                                <span class="label">Tập 29 HD</span>
+                                <a title="<%= item.post_title %>" href="#">
+                                    <img src="<%= item.img %>">
+                                    <p><i class="icofont-ui-play"></i></p>
+                                    <div class="name">
+                                        <span><%= item.post_title %></span>
                                     </div>
+                                </a>
                             </div>
-                        <% })%>               
+                        </div>
+                        <% })%>
+                    </div>
+                    <div class="row">
+                        <nav aria-label="Pagination">
+                            <ul class="pagination">
+                              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                              <li class="page-item"><a class="page-link" href="#"><%= page %></a></li>
+                              <li class="page-item"><a class="page-link" href="#"><%= page+1 %></a></li>
+                              <li class="page-item"><a class="page-link" href="#"><%= page+2 %></a></li>
+                              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </div>
