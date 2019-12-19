@@ -7,11 +7,18 @@ const ApiGetData= {
         const res = await fetch(URL_API_BASE +'/home');
         return await res.json();
     },
-    getAllCategory:async ()=>{
 
+    // http://xemphimplus.net/movie-api/get_categories
+    getAllCategory:async ()=>{
+        const res = await fetch(URL_API_BASE + '/get_categories');
+        return await res.json();
     },
-    getMoviesByCateGory:async ()=>{
-        
+
+    //http://xemphimplus.net/movie-api/get_movies_by_category?cat_id=755&per_page=5&page=1
+    getMoviesByCateGory: async (idCat ='751',page=1,perPage=12 )=>{
+        const link = URL_API_BASE + '/get_movies_by_category?cat_id='+idCat+'&per_page='+perPage+'&page='+page;
+        const res = await fetch(link);
+        return await res.json();
     }
 }
 

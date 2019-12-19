@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const {HomeRouteHandle}=require('../src/RoutesHandle/HomeRouteHandle')
+const {GetMoviesByCategoryRoute}=require('../src/RoutesHandle/MoviesRouteHandle')
 /* GET home page. */
 // router.get('/', function(req, res, next) {
 //   res.render('index', { title: 'Express' });
@@ -11,6 +12,9 @@ router.get('/', HomeRouteHandle);
 router.get('/movies', function(req, res, next) {
   res.render('movie', { title: 'Express' });
 });
+
+/* GET home page. */
+router.get('/list-movies', GetMoviesByCategoryRoute);
 
 /* GET home page. */
 router.get('/play', function(req, res, next) {
