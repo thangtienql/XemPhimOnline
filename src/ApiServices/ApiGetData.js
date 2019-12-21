@@ -19,6 +19,12 @@ const ApiGetData= {
         const link = URL_API_BASE + '/get_movies_by_category?cat_id='+idCat+'&per_page='+perPage+'&page='+page;
         const res = await fetch(link);
         return await res.json();
+    },
+
+    searchByKeyword:async (keyword='')=>{
+        const link = URL_API_BASE + '/get_search_results?s_query='+keyword;
+        const res = await fetch(link);
+        return await res.json();
     }
 }
 
