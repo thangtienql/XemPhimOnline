@@ -813,8 +813,10 @@ ul.server-backup li span:hover{
     background: #ffffff;
 }
 
-
-
+/* pagination */
+.pagination .page-link{
+    cursor: pointer;
+}
 
 
 @media screen and (max-width: 992px){

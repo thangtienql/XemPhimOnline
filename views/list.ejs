@@ -23,12 +23,18 @@
                     </div>
                     <div class="row">
                         <nav aria-label="Pagination">
-                            <ul class="pagination">
-                              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                              <li class="page-item"><a class="page-link" href="#"><%= page %></a></li>
-                              <li class="page-item"><a class="page-link" href="#"><%= page+1 %></a></li>
-                              <li class="page-item"><a class="page-link" href="#"><%= page+2 %></a></li>
-                              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            <ul class="pagination" id="pagination" data-page="<%= page %>" data-lastpage="<%= lastPage %>">
+                              <li class="page-item"><a class="page-link" data-page="1">First</a></li>
+                              <li class="page-item"><a class="page-link" data-page="<%= page-1 %>">Previous</a></li>
+                              <li class="page-item"><a class="page-link"><%= page %></a></li>
+                              <% if ((page+1) < lastPage) { %>
+                                <li class="page-item"><a class="page-link" data-page="<%= page+1 %>"><%= page+1 %></a></li>
+                              <% } %>
+                              <% if ((page+2) < lastPage) { %>
+                                <li class="page-item"><a class="page-link" data-page="<%= page+2 %>"><%= page+2 %></a></li>
+                              <% } %>
+                              <li class="page-item"><a class="page-link" data-page="<%= page+1 %>">Next</a></li>
+                              <li class="page-item"><a class="page-link" data-page="<%= lastPage %>">Last</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -37,5 +43,24 @@
         </div>
     </div>
 </div>
-
 <%- include('./page-base/bottom-base.ejs') %>
+<script>
+    function gotoPage(page) {
+        let baseLink = window.location.href;
+        let url = new URL(baseLink);
+        let queryString = url.search;
+        let search_params = new URLSearchParams(queryString);
+        search_params.set('page', page);
+        url.search = search_params.toString();
+        let newUrl = url.toString();
+        window.location.href = newUrl;
+    }
+    $('a.page-link').click(function () {
+        let lastPage = $('#pagination').data('lastpage');
+        let page = $(this).data('page');
+        if (page > lastPage || page < 1 || !page) {
+            return;
+        }
+        gotoPage(page);
+    });
+</script>
