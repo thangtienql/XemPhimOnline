@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 const {HomeRouteHandle}=require('../src/RoutesHandle/HomeRouteHandle')
 const {GetMoviesByCategoryRoute}=require('../src/RoutesHandle/MoviesRouteHandle')
-const {SearchRouteHandle}=require('../src/RoutesHandle/SearchRouteHandle')
+const {SearchRouteHandleRoute}=require('../src/RoutesHandle/SearchRouteHandle')
 /* GET home page. */
 // router.get('/', function(req, res, next) {
 //   res.render('index', { title: 'Express' });
@@ -18,7 +18,7 @@ router.get('/movies', function(req, res, next) {
 router.get('/list-movies', GetMoviesByCategoryRoute);
 
 /* GET home page. */
-router.get('/search', SearchRouteHandle);
+router.get('/search', SearchRouteHandleRoute);
 
 /* GET home page. */
 router.get('/play', function(req, res, next) {
