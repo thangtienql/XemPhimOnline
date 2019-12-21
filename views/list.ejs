@@ -21,23 +21,25 @@
                         </div>
                         <% })%>
                     </div>
-                    <div class="row">
-                        <nav aria-label="Pagination">
-                            <ul class="pagination" id="pagination" data-page="<%= page %>" data-lastpage="<%= lastPage %>">
-                              <li class="page-item"><a class="page-link" data-page="1">First</a></li>
-                              <li class="page-item"><a class="page-link" data-page="<%= page-1 %>">Previous</a></li>
-                              <li class="page-item"><a class="page-link"><%= page %></a></li>
-                              <% if ((page+1) < lastPage) { %>
-                                <li class="page-item"><a class="page-link" data-page="<%= page+1 %>"><%= page+1 %></a></li>
-                              <% } %>
-                              <% if ((page+2) < lastPage) { %>
-                                <li class="page-item"><a class="page-link" data-page="<%= page+2 %>"><%= page+2 %></a></li>
-                              <% } %>
-                              <li class="page-item"><a class="page-link" data-page="<%= page+1 %>">Next</a></li>
-                              <li class="page-item"><a class="page-link" data-page="<%= lastPage %>">Last</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+                    <% if (listMovies.length) { %>
+                        <div class="row">
+                            <nav aria-label="Pagination">
+                                <ul class="pagination" id="pagination" data-page="<%= page %>" data-lastpage="<%= lastPage %>">
+                                  <li class="page-item"><a class="page-link" data-page="1">First</a></li>
+                                  <li class="page-item"><a class="page-link" data-page="<%= page-1 %>">Previous</a></li>
+                                  <li class="page-item"><a class="page-link"><%= page %></a></li>
+                                  <% if ((page+1) < lastPage) { %>
+                                    <li class="page-item"><a class="page-link" data-page="<%= page+1 %>"><%= page+1 %></a></li>
+                                  <% } %>
+                                  <% if ((page+2) < lastPage) { %>
+                                    <li class="page-item"><a class="page-link" data-page="<%= page+2 %>"><%= page+2 %></a></li>
+                                  <% } %>
+                                  <li class="page-item"><a class="page-link" data-page="<%= page+1 %>">Next</a></li>
+                                  <li class="page-item"><a class="page-link" data-page="<%= lastPage %>">Last</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    <% } %>
                 </div>
             </div>
         </div>
@@ -58,7 +60,7 @@
     $('a.page-link').click(function () {
         let lastPage = $('#pagination').data('lastpage');
         let page = $(this).data('page');
-        if (page > lastPage || page < 1 || !page) {
+        if (page >= lastPage || page < 1 || !page) {
             return;
         }
         gotoPage(page);

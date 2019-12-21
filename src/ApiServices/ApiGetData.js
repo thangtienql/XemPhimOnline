@@ -21,8 +21,8 @@ const ApiGetData= {
         return await res.json();
     },
 
-    searchByKeyword:async (keyword='')=>{
-        const link = URL_API_BASE + '/get_search_results?s_query='+keyword;
+    searchByKeyword:async (keyword='', page = 1, perPage = 12)=>{
+        const link = URL_API_BASE + '/get_search_results?s_query='+keyword+'&page='+page+'&per_page='+perPage;
         const res = await fetch(link);
         return await res.json();
     }
