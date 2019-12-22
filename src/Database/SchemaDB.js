@@ -7,6 +7,7 @@ const CategorySchema = new Schema({
     id: String,
     cat_name: String,
     cat_name_link: String,
+    cat_id: String,
     count: Number
 })
 
