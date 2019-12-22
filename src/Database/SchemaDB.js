@@ -6,6 +6,7 @@ const Schema = mongoose.Schema;
 const CategorySchema = new Schema({
     id: String,
     cat_name: String,
+    cat_name_link: String,
     count: Number
 })
 
