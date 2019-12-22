@@ -6,6 +6,7 @@ var logger = require('morgan');
 var iframeReplacement = require('node-iframe-replacement');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+const MongoDB = require('./src/Database/MongoDB');
 
 var app = express();
 
@@ -37,6 +38,12 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
+});
+
+MongoDB.connectDB().then(() => {
+  console.log("----- Connected DB ------");
+}, (err) => {
+  console.log("connect DB error:", err);
 });
 
 
