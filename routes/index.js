@@ -14,8 +14,8 @@ router.get('/movies', function(req, res, next) {
   res.render('movie', { title: 'Express' });
 });
 
-/* GET home page. */
-router.get('/list-movies', GetMoviesByCategoryRoute);
+/* GET film of category. */
+router.get('/the-loai/:slug', GetMoviesByCategoryRoute);
 
 /* GET home page. */
 router.get('/search', SearchRouteHandleRoute);
