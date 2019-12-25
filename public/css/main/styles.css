@@ -284,7 +284,7 @@ body{
 
 
 /* phim-hoat-hinh */
-.phim-hoat-hinh .title-box{
+.phim-hoat-hinh .title-box,.title-box{
     margin-top: 15px;
     font-size: 25px;
     color: #ff9601;
