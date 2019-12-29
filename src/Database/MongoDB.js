@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 const URL_DATABASE = dbConnectString();
-var env = require("../Common/env");
+var env = require("../Common/Env");
 
 let options = {useNewUrlParser: true};
 
