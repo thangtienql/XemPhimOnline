@@ -30,7 +30,7 @@ function dbConnectTestLocalString() {
 
 function connectOption() {
     if (env.get("APP_ENV") == "production") {
-        const DB_USER = "admin";
+        const DB_USER = "admin_mongo";
         const DB_PASS = "admin789@#";
         return {
             useNewUrlParser: true,
