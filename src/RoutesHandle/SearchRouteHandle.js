@@ -14,7 +14,7 @@ const SearchRouteHandleRoute = async (req, res, next) => {
         } } = resSeearch;
         let lastPage = 1;
         // res.render('index', { title: 'Express', dataMovieHot: dataMovieHot, dataNewMovies: dataNewMovies})
-        res.render('list', { listMovies: listMovies, page: page, lastPage: lastPage })
+        res.render('list', { title:'Search: '+keywords,listMovies: listMovies, page: page, lastPage: lastPage })
     } catch (err) {
         console.log('error:', err)
         res.render('index', {
