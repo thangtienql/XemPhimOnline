@@ -8,7 +8,8 @@ var MongoDB = {
     connectDB: async () => {
         mongoose.Promise = global.Promise;
         console.log("url mongo:", URL_DATABASE);
-        mongoose.set('useCreateIndex', true)
+        mongoose.set('useCreateIndex', true);
+        console.log(connectOption());
         return await mongoose.connect(URL_DATABASE, connectOption());
     }
 }
