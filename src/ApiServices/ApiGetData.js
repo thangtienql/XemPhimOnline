@@ -25,6 +25,12 @@ const ApiGetData= {
         const link = URL_API_BASE + '/get_search_results?s_query='+keyword+'&page='+page+'&per_page='+perPage;
         const res = await fetch(link);
         return await res.json();
+    },
+
+    getAllFilm: async (idCat="all") => {
+        const link = URL_API_BASE + '/get_movies_by_category?cat_id=' + idCat + '&page=1&per_page=5000';
+        const res = await fetch(link);
+        return await res.json();
     }
 }
 
